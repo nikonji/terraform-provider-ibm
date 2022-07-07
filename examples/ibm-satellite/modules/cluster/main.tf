@@ -51,7 +51,7 @@ data "ibm_satellite_cluster_worker_pool" "read_cluster_wp" {
   depends_on = [ibm_satellite_cluster_worker_pool.create_cluster_wp]
 }
 
-resource "ibm_satellite_cluster_worker_pool_zone_attachment" "create_worker_pool_zone" {
+/* resource "ibm_satellite_cluster_worker_pool_zone_attachment" "create_worker_pool_zone" {
   cluster     = data.ibm_satellite_cluster_worker_pool.read_cluster_wp.cluster
   worker_pool = var.worker_pool_name
   zone        = var.zone_name
@@ -61,4 +61,4 @@ data "ibm_satellite_cluster_worker_pool_zone_attachment" "read_worker_pool_zone_
   cluster     = ibm_satellite_cluster_worker_pool_zone_attachment.create_worker_pool_zone.cluster
   worker_pool = var.worker_pool_name
   zone        = var.zone_name
-}
+} */

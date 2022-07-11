@@ -137,7 +137,7 @@ resource "ibm_is_instance" "satellite_instance" {
   image          = data.ibm_is_image.rhel7.id
 #  profile        = "mx2-8x64"
 #  profile        = "bx2-4x16"
-  profile        = var.serverspec
+  profile        = var.profile
   keys           = [ibm_is_ssh_key.satellite_ssh.id]
   resource_group = data.ibm_resource_group.resource_group.id
   user_data      = module.satellite-location.host_script

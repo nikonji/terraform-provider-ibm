@@ -91,6 +91,12 @@ variable "public_key" {
   default     = null
 }
 
+variable "profile" {
+  description = "server spec"
+  type        = string
+  default     = "bx2-4x16"
+}  
+  
 ##################################################
 # IBMCLOUD ROKS Cluster Variables
 ##################################################

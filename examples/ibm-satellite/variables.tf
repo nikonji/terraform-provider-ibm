@@ -124,7 +124,7 @@ variable "default_wp_labels" {
 variable "kube_version" {
   description = "Satellite Kube Version"
   type        = string
-  default     = "4.7_openshift"
+  default     = "4.8_openshift"
 }
 
 variable "worker_pool_name" {
